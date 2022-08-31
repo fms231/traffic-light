@@ -1,0 +1,57 @@
+
+# PlanAhead Generated IO constraints 
+
+NET "an[3]" IOSTANDARD = LVCMOS18;
+NET "an[2]" IOSTANDARD = LVCMOS18;
+NET "an[1]" IOSTANDARD = LVCMOS18;
+NET "an[0]" IOSTANDARD = LVCMOS18;
+NET "light1[2]" IOSTANDARD = LVCMOS18;
+NET "light1[1]" IOSTANDARD = LVCMOS18;
+NET "light1[0]" IOSTANDARD = LVCMOS18;
+NET "light2[2]" IOSTANDARD = LVCMOS18;
+NET "light2[1]" IOSTANDARD = LVCMOS18;
+NET "light2[0]" IOSTANDARD = LVCMOS18;
+NET "seg[7]" IOSTANDARD = LVCMOS18;
+NET "seg[6]" IOSTANDARD = LVCMOS18;
+NET "seg[5]" IOSTANDARD = LVCMOS18;
+NET "seg[4]" IOSTANDARD = LVCMOS18;
+NET "seg[3]" IOSTANDARD = LVCMOS18;
+NET "seg[2]" IOSTANDARD = LVCMOS18;
+NET "seg[1]" IOSTANDARD = LVCMOS18;
+NET "seg[0]" IOSTANDARD = LVCMOS18;
+NET "clk" IOSTANDARD = LVCMOS18;
+NET "clr" IOSTANDARD = LVCMOS18;
+NET "pause" IOSTANDARD = LVCMOS18;
+NET "stopa" IOSTANDARD = LVCMOS18;
+NET "stopb" IOSTANDARD = LVCMOS18;
+NET "clk" PULLDOWN;
+NET "clr" PULLDOWN;
+NET "pause" PULLDOWN;
+NET "stopa" PULLDOWN;
+NET "stopb" PULLDOWN;
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = H4;
+NET "clr" LOC = T3;
+NET "stopa" LOC = U3;
+NET "stopb" LOC = T4;
+NET "pause" LOC = V3;
+NET "light1[2]" LOC = R1;
+NET "light1[1]" LOC = P2;
+NET "light1[0]" LOC = P1;
+NET "light2[2]" LOC = M2;
+NET "light2[1]" LOC = L1;
+NET "light2[0]" LOC = J2;
+NET "seg[7]" LOC = H19;
+NET "seg[6]" LOC = G20;
+NET "seg[5]" LOC = J22;
+NET "seg[4]" LOC = K22;
+NET "seg[3]" LOC = K21;
+NET "seg[2]" LOC = H20;
+NET "seg[1]" LOC = H22;
+NET "seg[0]" LOC = J21;
+NET "an[3]" LOC = L21;
+NET "an[2]" LOC = M22;
+NET "an[1]" LOC = M21;
+NET "an[0]" LOC = N22;

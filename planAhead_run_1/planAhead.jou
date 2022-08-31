@@ -1,0 +1,103 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Dec 28 00:52:50 2021
+# Process ID: 19664
+# Log file: D:/szdl/jiaotongdeng/planAhead_run_1/planAhead.log
+# Journal file: D:/szdl/jiaotongdeng/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/szdl/jiaotongdeng/pa.fromNetlist.tcl
+set_property iostandard LVCMOS18 [get_ports [list {an[3]} {an[2]} {an[1]} {an[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {light1[2]} {light1[1]} {light1[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {light2[2]} {light2[1]} {light2[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {seg[7]} {seg[6]} {seg[5]} {seg[4]} {seg[3]} {seg[2]} {seg[1]} {seg[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list clk]]
+set_property iostandard LVCMOS18 [get_ports [list clr]]
+set_property iostandard LVCMOS18 [get_ports [list pause]]
+set_property iostandard LVCMOS18 [get_ports [list stopa]]
+set_property iostandard LVCMOS18 [get_ports [list stopb]]
+set_property pulltype PULLDOWN [get_ports [list clk]]
+set_property pulltype PULLDOWN [get_ports [list clr]]
+set_property pulltype PULLDOWN [get_ports [list pause]]
+set_property pulltype PULLDOWN [get_ports [list stopa]]
+set_property pulltype PULLDOWN [get_ports [list stopb]]
+startgroup
+set_property package_pin H4 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin T3 [get_ports clr]
+endgroup
+startgroup
+set_property package_pin U3 [get_ports pause]
+endgroup
+set_property package_pin "" [get_ports [list  stopa]]
+set_property package_pin "" [get_ports [list  pause]]
+startgroup
+set_property package_pin U3 [get_ports stopa]
+endgroup
+startgroup
+set_property package_pin T4 [get_ports stopb]
+endgroup
+startgroup
+set_property package_pin V3 [get_ports pause]
+endgroup
+startgroup
+set_property package_pin R2 [get_ports {light1[2]}]
+endgroup
+set_property package_pin "" [get_ports [list  {light1[1]}]]
+startgroup
+set_property package_pin R1 [get_ports {light1[2]}]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports {light1[1]}]
+endgroup
+startgroup
+set_property package_pin P1 [get_ports {light1[0]}]
+endgroup
+startgroup
+set_property package_pin M2 [get_ports {light2[2]}]
+endgroup
+startgroup
+set_property package_pin L1 [get_ports {light2[1]}]
+endgroup
+startgroup
+set_property package_pin J2 [get_ports {light2[0]}]
+endgroup
+startgroup
+set_property package_pin H19 [get_ports {seg[7]}]
+endgroup
+startgroup
+set_property package_pin G20 [get_ports {seg[6]}]
+endgroup
+startgroup
+set_property package_pin J22 [get_ports {seg[5]}]
+endgroup
+startgroup
+set_property package_pin K22 [get_ports {seg[4]}]
+endgroup
+startgroup
+set_property package_pin K21 [get_ports {seg[3]}]
+endgroup
+startgroup
+set_property package_pin H20 [get_ports {seg[2]}]
+endgroup
+startgroup
+set_property package_pin H22 [get_ports {seg[1]}]
+endgroup
+startgroup
+set_property package_pin J21 [get_ports {seg[0]}]
+endgroup
+startgroup
+set_property package_pin L21 [get_ports {an[3]}]
+endgroup
+startgroup
+set_property package_pin M22 [get_ports {an[2]}]
+endgroup
+startgroup
+set_property package_pin M21 [get_ports {an[1]}]
+endgroup
+startgroup
+set_property package_pin N22 [get_ports {an[0]}]
+endgroup
+save_constraints

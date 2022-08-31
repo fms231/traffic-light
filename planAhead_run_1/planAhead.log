@@ -1,0 +1,171 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Dec 28 00:52:50 2021
+# Process ID: 19664
+# Log file: D:/szdl/jiaotongdeng/planAhead_run_1/planAhead.log
+# Journal file: D:/szdl/jiaotongdeng/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/ise/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/szdl/jiaotongdeng/pa.fromNetlist.tcl
+# create_project -name jiaotongdeng -dir "D:/szdl/jiaotongdeng/planAhead_run_1" -part xc7a100tfgg484-2L
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/szdl/jiaotongdeng/top.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/szdl/jiaotongdeng} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "top.ucf" [current_fileset -constrset]
+Adding file 'D:/szdl/jiaotongdeng/top.ucf' to fileset 'constrs_1'
+# add_files [list {top.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc7a100tfgg484-2L
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design top.ngc ...
+WARNING:NetListWriters:298 - No output is written to top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus l/data<13 : 0> on block top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Result<19 : 0> on block top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus l/data[15]_GND_4_o_mux_92_OUT<13 : 0> on
+   block top is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file top.edif ...
+ngc2edif: Total memory usage is 4316792 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/jiaotongdeng.data/cache/top_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/jiaotongdeng.data/cache/top_ngc_zx.edif]
+INFO: [Netlist 29-17] Analyzing 42 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from D:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from D:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from D:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from D:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from D:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/fgg484/Package.xml
+Loading io standards from D:/ise/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from D:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/ConfigModes.xml
+Loading list of drcs for the architecture : D:/ise/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/drc.xml
+Parsing UCF File [D:/szdl/jiaotongdeng/top.ucf]
+Finished Parsing UCF File [D:/szdl/jiaotongdeng/top.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 42 instances were transformed.
+  BUFGP => BUFGP (IBUF, BUFG): 1 instances
+  FD => FDCE: 8 instances
+  FDC => FDCE: 22 instances
+  FDE => FDCE: 1 instances
+  FDR => FDRE: 10 instances
+
+Phase 0 | Netlist Checksum: 16007c6e
+link_design: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 879.516 ; gain = 359.543
+set_property iostandard LVCMOS18 [get_ports [list {an[3]} {an[2]} {an[1]} {an[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {light1[2]} {light1[1]} {light1[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {light2[2]} {light2[1]} {light2[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {seg[7]} {seg[6]} {seg[5]} {seg[4]} {seg[3]} {seg[2]} {seg[1]} {seg[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list clk]]
+set_property iostandard LVCMOS18 [get_ports [list clr]]
+set_property iostandard LVCMOS18 [get_ports [list pause]]
+set_property iostandard LVCMOS18 [get_ports [list stopa]]
+set_property iostandard LVCMOS18 [get_ports [list stopb]]
+set_property pulltype PULLDOWN [get_ports [list clk]]
+set_property pulltype PULLDOWN [get_ports [list clr]]
+set_property pulltype PULLDOWN [get_ports [list pause]]
+set_property pulltype PULLDOWN [get_ports [list stopa]]
+set_property pulltype PULLDOWN [get_ports [list stopb]]
+startgroup
+set_property package_pin H4 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin T3 [get_ports clr]
+endgroup
+startgroup
+set_property package_pin U3 [get_ports pause]
+endgroup
+set_property package_pin "" [get_ports [list  stopa]]
+set_property package_pin "" [get_ports [list  pause]]
+startgroup
+set_property package_pin U3 [get_ports stopa]
+endgroup
+startgroup
+set_property package_pin T4 [get_ports stopb]
+endgroup
+startgroup
+set_property package_pin V3 [get_ports pause]
+endgroup
+startgroup
+set_property package_pin R2 [get_ports {light1[2]}]
+endgroup
+set_property package_pin "" [get_ports [list  {light1[1]}]]
+startgroup
+set_property package_pin R1 [get_ports {light1[2]}]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports {light1[1]}]
+endgroup
+startgroup
+set_property package_pin P1 [get_ports {light1[0]}]
+endgroup
+startgroup
+set_property package_pin M2 [get_ports {light2[2]}]
+endgroup
+startgroup
+set_property package_pin L1 [get_ports {light2[1]}]
+endgroup
+startgroup
+set_property package_pin J2 [get_ports {light2[0]}]
+endgroup
+startgroup
+set_property package_pin H19 [get_ports {seg[7]}]
+endgroup
+startgroup
+set_property package_pin G20 [get_ports {seg[6]}]
+endgroup
+startgroup
+set_property package_pin J22 [get_ports {seg[5]}]
+endgroup
+startgroup
+set_property package_pin K22 [get_ports {seg[4]}]
+endgroup
+startgroup
+set_property package_pin K21 [get_ports {seg[3]}]
+endgroup
+startgroup
+set_property package_pin H20 [get_ports {seg[2]}]
+endgroup
+startgroup
+set_property package_pin H22 [get_ports {seg[1]}]
+endgroup
+startgroup
+set_property package_pin J21 [get_ports {seg[0]}]
+endgroup
+startgroup
+set_property package_pin L21 [get_ports {an[3]}]
+endgroup
+startgroup
+set_property package_pin M22 [get_ports {an[2]}]
+endgroup
+startgroup
+set_property package_pin M21 [get_ports {an[1]}]
+endgroup
+startgroup
+set_property package_pin N22 [get_ports {an[0]}]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See D:/szdl/jiaotongdeng\planAhead_pid19664.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue Dec 28 00:59:11 2021...
+INFO: [Common 17-83] Releasing license: PlanAhead

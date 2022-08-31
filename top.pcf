@@ -1,0 +1,30 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Dec 29 10:21:33 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "an<0>" LOCATE = SITE "N22" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "M21" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "M22" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "L21" LEVEL 1;
+COMP "clk" LOCATE = SITE "H4" LEVEL 1;
+COMP "clr" LOCATE = SITE "T3" LEVEL 1;
+COMP "light1<0>" LOCATE = SITE "P1" LEVEL 1;
+COMP "light1<1>" LOCATE = SITE "P2" LEVEL 1;
+COMP "light1<2>" LOCATE = SITE "R1" LEVEL 1;
+COMP "light2<0>" LOCATE = SITE "J2" LEVEL 1;
+COMP "light2<1>" LOCATE = SITE "L1" LEVEL 1;
+COMP "pause" LOCATE = SITE "V3" LEVEL 1;
+COMP "light2<2>" LOCATE = SITE "M2" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "J21" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "H22" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "H20" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "K21" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "K22" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "J22" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "G20" LEVEL 1;
+COMP "seg<7>" LOCATE = SITE "H19" LEVEL 1;
+COMP "stopa" LOCATE = SITE "U3" LEVEL 1;
+COMP "stopb" LOCATE = SITE "T4" LEVEL 1;
+SCHEMATIC END;
+
